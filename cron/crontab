@@ -1,0 +1,2 @@
+# m h dom mon dow user command
+* * * * * . /home/docker/code/cron/env.sh && export >> /home/docker/code/cron/export.log
