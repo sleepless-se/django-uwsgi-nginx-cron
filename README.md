@@ -43,9 +43,6 @@ to the wsgi.py file is relative to that.
 
 ### cron setting
 
-You can add new cron on `cron/crontab` file.
+You can add new cron on `cron/crontab` file. When you run command, you need put this command ` . /home/docker/code/cron/env.sh` before your command.  It's import environment variable from `env.sh`
 
-When you run command, you need put this command ` . /home/docker/code/cron/env.sh` before your command.  It's import environment variable from `env.sh`
-
-```* * * * * . /home/docker/code/cron/env.sh && export >> /home/docker/code/cron/export.log```# django-uwsgi-nginx-cron
-# django-uwsgi-nginx-cron
+```* * * * * . /home/docker/code/cron/env.sh && export >> /home/docker/code/cron/export.log```
